@@ -9,6 +9,6 @@ wheels/
 # Virtual environments
 .venv
 
-
+/learning/4.practice/zomato.csv
 .vscode
 .idea
