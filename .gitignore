@@ -1,14 +1,99 @@
+# Data Analytics Project .gitignore
+
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+*.so
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
+.Python
 
 # Virtual environments
-.venv
+.venv/
+venv/
+env/
+ENV/
+.env
 
-/learning/2.practice/zomato.csv
-.vscode
-.idea
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data files (large datasets)
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+
+# Exclude specific large datasets but keep small sample files
+/learning/1.practice/*.csv
+/learning/2.practice/*.csv
+/root/learning/1.practice/*.csv
+/root/learning/2.practice/*.csv
+
+# But allow README and documentation
+!**/README.md
+!**/readme.md
+!**/*.md
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# System files
+*.log
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+
+# Machine Learning models
+*.model
+*.pkl
+*.joblib
+*.h5
+
+# Tableau files
+*.twb
+*.twbx
+*.tde
+*.hyper
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# PowerBI files
+*.pbix
+*.pbit
+
+# Documentation build
+docs/_build/
+site/
+
+# Local configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node modules (if using any web components)
+node_modules/
+
+# Backup files
+*.bak
+*.backup
+*.old
